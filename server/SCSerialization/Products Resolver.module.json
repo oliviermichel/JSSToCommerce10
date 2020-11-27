@@ -1,0 +1,14 @@
+{
+  "namespace": "Project.Content.ProductsResolver",
+  "references":  "", 
+  "items": {
+    "includes": [
+      {
+        "name": "Products Resolver",
+        "path": "/sitecore/system/Modules/Layout Service/Rendering Contents Resolvers/Products Resolver",
+        "allowedPushOperations": "createUpdateAndDelete",
+        "scope": "itemAndDescendants"
+      }
+    ]
+  }
+}

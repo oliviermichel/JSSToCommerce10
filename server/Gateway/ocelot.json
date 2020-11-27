@@ -1,0 +1,29 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/Carts('{cartId}')?$expand=Lines($expand=CartLineComponents($expand=ChildComponents)),Components",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5100
+        }
+      ],
+      "UpstreamPathTemplate": "/carts/{cartId}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamHeaderTransform": {
+        "Environment": "HabitatAuthoring",
+        "Language": "en-US",
+        "Currency": "USD",
+        "ShopName": "CommerceEngineDefaultStorefront",
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "test",
+        "AllowedScopes": []
+      }
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:44369"
+  }
+}

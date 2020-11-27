@@ -1,0 +1,14 @@
+{
+  "namespace": "Project.Content.SubcategoryNavigationResolver",
+  "references":  "", 
+  "items": {
+    "includes": [
+      {
+        "name": "Subcategory Navigation Resolver",
+        "path": "/sitecore/system/Modules/Layout Service/Rendering Contents Resolvers/Subcategory Navigation Resolver",
+        "allowedPushOperations": "createUpdateAndDelete",
+        "scope": "itemAndDescendants"
+      }
+    ]
+  }
+}

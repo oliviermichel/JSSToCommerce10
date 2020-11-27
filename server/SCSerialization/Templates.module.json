@@ -1,0 +1,14 @@
+{
+  "namespace": "Project.Content.Templates",
+  "references":  "", 
+  "items": {
+    "includes": [
+      {
+        "name": "Templates",
+        "path": "/sitecore/templates/Project/app",
+        "allowedPushOperations": "createUpdateAndDelete",
+        "scope": "itemAndDescendants"
+      }
+    ]
+  }
+}

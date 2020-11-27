@@ -1,0 +1,11 @@
+styleguide-sample: This is a dictionary entry in English as a demonstration
+Documentation: Documentation
+Styleguide: Styleguide
+GraphQL: GraphQL
+cart-title: My Cart
+cart-is-empty: Your cart is empty!
+cart-total: Total
+cart-line-quantity: Quantity
+cart-line-remove: Remove
+checkout-title: Checkout
+checkout-fulfillment-email: Email

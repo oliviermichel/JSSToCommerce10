@@ -1,0 +1,176 @@
+﻿---
+ID: "a6839fcb-de7d-ed7b-8d66-8f2f760847a1"
+Parent: "7131d005-6ad2-612b-4927-4e7cd72b187b"
+Template: "79cd2fdc-7e23-4b34-a2f1-441047b3d96d"
+Path: "/sitecore/content/app/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-eGift Cards and Gift Wrapping/6042989/56042989"
+SharedFields:
+- ID: "0185d335-4545-edd6-76a8-460db418966a"
+  Hint: VariationProperties
+  Value: Color|Size
+- ID: "01d789fd-74e0-117e-2eb4-6612a1642643"
+  Hint: Name
+  Value: Habitat Gift Wrapping (Style1)
+- ID: "12e7727e-741f-ae2d-7f59-b39f7234f53c"
+  Hint: DisplayInProductList
+  Value: 0
+- ID: "3dbba730-7800-f912-b345-3937f7feb0f3"
+  Hint: DisplayOnSite
+  Value: 0
+- ID: "8d4aaea6-6658-7905-192d-c8c1b65ef353"
+  Hint: Tags
+  Value: giftwrapping|holidays|birthdays|presents|service|entitlement|digitalservice
+- ID: "94520a52-93c3-4f33-a20d-618bdedc4bd2"
+  Hint: Images
+  Value: "{A54D06CD-E595-401F-9EE8-09BC0A459591}"
+- ID: "a7c26e68-f587-b3a5-a48d-6c9b08752472"
+  Hint: ParentCatalogList
+  Value: "59ddadc1-9b88-727e-9e14-3f6cf321ae0f"
+- ID: "b9ad0613-0584-6c55-d180-1c7d0215d9e7"
+  Hint: ProductId
+  Value: 6042989
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: "ar|Everyone|pe|+item:read|pd|+item:read|"
+- ID: "f41b1b99-0107-dd43-f234-adae63d913f3"
+  Hint: SitecoreId
+  Value: "8478f567-f27e-1a2e-bb2a-c8de12931e64"
+- ID: "f4b64d68-f727-7a2d-f1e2-628e5704aa18"
+  Hint: ParentCategoryList
+  Value: "6caac735-ab5e-f522-7e4a-7be69ae08c74|40efade8-f239-f66d-a290-1df10892b81d"
+Languages:
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Habitat Gift Wrapping (Style1)
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0758db64-0746-2bbb-241b-2abd830a33c6"
+      Hint: Description
+      Value: "We'll wrap your gift in colorful paper with a silver bow and a handwritten gift tag. Items that do not fit in a box are gift-wrapped, tied with a silver ribbon and include a gift tag."
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "11/25/2020 10:43:07"
+    - ID: "4edc4293-0bb6-a995-8014-bf1678a30054"
+      Hint: Color
+      Value: Style1
+    - ID: "4faf0196-c1bb-8764-f658-ee6ec2e91a51"
+      Hint: DisplayName
+      Value: Habitat Gift Wrapping (Style1)
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "91c94ffd-986d-fd65-72fe-27c348874999"
+      Hint: Brand
+      Value: Helix Gift Wrapping
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "10/23/2020 10:04:29"
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Habitat Gift Wrapping (Style1)
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0758db64-0746-2bbb-241b-2abd830a33c6"
+      Hint: Description
+      Value: "We'll wrap your gift in colorful paper with a silver bow and a handwritten gift tag. Items that do not fit in a box are gift-wrapped, tied with a silver ribbon and include a gift tag."
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "05/13/2020 20:44:02"
+    - ID: "4edc4293-0bb6-a995-8014-bf1678a30054"
+      Hint: Color
+      Value: Style1
+    - ID: "4faf0196-c1bb-8764-f658-ee6ec2e91a51"
+      Hint: DisplayName
+      Value: Habitat Gift Wrapping (Style1)
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "91c94ffd-986d-fd65-72fe-27c348874999"
+      Hint: Brand
+      Value: Helix Gift Wrapping
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "10/23/2020 10:04:29"
+- Language: "fr-FR"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Habitat Gift Wrapping (Style1)
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0758db64-0746-2bbb-241b-2abd830a33c6"
+      Hint: Description
+      Value: "We'll wrap your gift in colorful paper with a silver bow and a handwritten gift tag. Items that do not fit in a box are gift-wrapped, tied with a silver ribbon and include a gift tag."
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "11/25/2020 10:43:07"
+    - ID: "4edc4293-0bb6-a995-8014-bf1678a30054"
+      Hint: Color
+      Value: Style1
+    - ID: "4faf0196-c1bb-8764-f658-ee6ec2e91a51"
+      Hint: DisplayName
+      Value: Habitat Gift Wrapping (Style1)
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "91c94ffd-986d-fd65-72fe-27c348874999"
+      Hint: Brand
+      Value: Helix Gift Wrapping
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "10/23/2020 10:04:29"
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Habitat Gift Wrapping (Style1)
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0758db64-0746-2bbb-241b-2abd830a33c6"
+      Hint: Description
+      Value: "We'll wrap your gift in colorful paper with a silver bow and a handwritten gift tag. Items that do not fit in a box are gift-wrapped, tied with a silver ribbon and include a gift tag."
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "11/25/2020 10:43:07"
+    - ID: "4edc4293-0bb6-a995-8014-bf1678a30054"
+      Hint: Color
+      Value: Style1
+    - ID: "4faf0196-c1bb-8764-f658-ee6ec2e91a51"
+      Hint: DisplayName
+      Value: Habitat Gift Wrapping (Style1)
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "91c94ffd-986d-fd65-72fe-27c348874999"
+      Hint: Brand
+      Value: Helix Gift Wrapping
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "10/23/2020 10:04:29"

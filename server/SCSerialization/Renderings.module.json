@@ -1,0 +1,14 @@
+{
+  "namespace": "Project.Content.Renderings",
+  "references":  "", 
+  "items": {
+    "includes": [
+      {
+        "name": "Renderings",
+        "path": "/sitecore/layout/Renderings/Project/app",
+        "allowedPushOperations": "createUpdateAndDelete",
+        "scope": "itemAndDescendants"
+      }
+    ]
+  }
+}

@@ -1,0 +1,137 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+a[target='_blank']:after {
+  content: '\1F5D7'
+}
+
+/*
+  Hides Sitecore Experience Editor markup,
+  if you run the app in connected mode while the Sitecore cookies
+  are set to edit mode.
+*/
+.scChromeData, .scpm { display: none !important; }
+
+.cart { @extend .d-flex, .flex-column, .border, .border-primary, .rounded;
+  padding: 0 20px;
+
+  &--checkout { @extend .btn, .btn-primary;
+  }
+
+  // Footer styling
+  footer { @extend .d-flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.cartline { @extend .d-flex, .flex-row, .border, .bg-light, .rounded;
+  padding: 20px;
+  margin-bottom: 10px;
+
+  &__name { @extend .align-self-center, .flex-grow-1;
+    width: 50%;
+  }
+
+  &__actions { @extend .d-flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  &__quantity { @extend .align-self-center, .form-control;
+    width: 50px;
+  }
+
+  &--remove { @extend .align-self-center, .btn, .btn-danger; 
+  }
+}
+
+.checkout {
+  form {
+    width: 50%;
+
+    .textfield { @extend .form-group;
+      input { @extend .form-control;
+      }
+    }
+
+    .fulfillmentinfoform--order { @extend .btn, .btn-primary;
+    }
+
+    .errors { @extend .alert, .alert-danger;
+    }
+  }
+}
+
+
+.price {
+  color: dodgerblue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 42px;
+}
+
+.price__currency {
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.productlist {
+  padding: 5px;
+}
+
+.productsummary {
+  border: 1px solid #dedede;
+  position: relative;
+  border-radius: 5px;
+  width: 33.333333%;
+  float: left;
+  height: 542px;
+  text-align: center;
+
+  &__name {
+    display: block;
+    font-size: 22px;
+    font-weight: bold
+  }
+
+  &__description {
+    display: block;
+  }
+
+  &__image {
+    display: inline-block;
+  }
+}
+
+.categorynavigation { @extend .navbar, .navbar-expand-lg, .navbar-light, .bg-light;
+  ul { @extend .navbar-nav;
+  }
+}
+
+.categorynavigation__navitem { @extend .nav-item;
+  a { @extend .nav-link;
+
+  }
+}
+
+.subcategorynavigation { @extend .navbar, .navbar-expand-lg, .navbar-dark, .bg-primary, .text-white;
+  ul { @extend .navbar-nav;
+  
+  }
+}
+
+.subcategorynavigation__navitem { @extend .nav-item;
+  a { @extend .nav-link;
+    
+  }
+}
+
+.addtocart { @extend .btn, .btn-primary;  
+  display: block
+}
+
+.productsummary .addtocart  {
+  display: inline-block
+}
+
+.abandon-session { @extend .btn, .btn-danger;  
+}

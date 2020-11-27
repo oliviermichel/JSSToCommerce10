@@ -1,0 +1,5 @@
+id: home-page
+fields:
+  pageTitle: Welcome to Sitecore JSS
+placeholders:
+  jss-main: []

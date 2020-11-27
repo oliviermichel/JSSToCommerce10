@@ -1,0 +1,186 @@
+﻿---
+ID: "8cfcfecb-b02d-79cc-347b-11f17a6d531e"
+Parent: "e5e9207c-58cd-0735-2a79-b5d2b199ea7a"
+Template: "14a80548-bafa-451b-8844-56170152d1cf"
+Path: "/sitecore/content/app/home/Catalogs/Habitat_Master/Habitat_Master-Assortments/Habitat_Master-DefaultRecommendations/6042986"
+SharedFields:
+- ID: "0185d335-4545-edd6-76a8-460db418966a"
+  Hint: VariationProperties
+  Value: Color|Size
+- ID: "01d789fd-74e0-117e-2eb4-6612a1642643"
+  Hint: Name
+  Value: Default GiftCard
+- ID: "23400686-cbab-4d5b-bad6-5287a454b61c"
+  Hint: SellableItemToBundle
+  Value: |
+    {8AF86079-A7F1-4474-76F6-384C14E5C3E0}
+    {1C68D00C-1962-1708-8ADE-EC2F01A080B4}
+    {C87F8450-4AA4-CBC8-BC48-A804913A7800}
+- ID: "8d4aaea6-6658-7905-192d-c8c1b65ef353"
+  Hint: Tags
+  Value: giftcards|holidays|birthdays|presents|entitlement|discountexempt|taxexempt
+- ID: "94520a52-93c3-4f33-a20d-618bdedc4bd2"
+  Hint: Images
+  Value: "{7B57E6E0-A4EF-417E-809C-572F2E30AEF7}"
+- ID: "a1e73bb0-9b62-4b86-8dc7-63236dcc304f"
+  Hint: RelatedSellableItemToSellableItem
+  Value: |
+    {729AEAA9-6027-4E2A-97C7-5B46207F228E}
+    {191F9117-9075-EF5E-CFDD-A15E3A9ADDEE}
+    {8095550A-8DA4-A6AF-6B95-28FEA8EF19DC}
+    {03BD4E50-236A-B227-6C44-42D64CC84838}
+    {0889C6DC-1980-E861-3CF9-1091CD69C8B5}
+    {2DE7FDBA-1DC6-E210-1E42-637BE255AC5F}
+    {037CA84D-6910-6AFB-AA79-B469134915DB}
+    {4469A91C-9E3C-D621-5B62-01332D5386A8}
+    {49712E89-B6AC-10F1-9FB2-67060CB0142B}
+    {72CA4439-59CF-AFF5-AC27-186CB1A14779}
+- ID: "a39c3a8b-e06c-ad06-4b25-42760c00654e"
+  Hint: ItemDefinitions
+  Value: GiftCardV2
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{f1fb8a76-9c0e-fcbb-3f7f-a57c84e92e39}"
+- ID: "a7c26e68-f587-b3a5-a48d-6c9b08752472"
+  Hint: ParentCatalogList
+  Value: "59ddadc1-9b88-727e-9e14-3f6cf321ae0f"
+- ID: "b9ad0613-0584-6c55-d180-1c7d0215d9e7"
+  Hint: ProductId
+  Value: 6042986
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: "{f1fb8a76-9c0e-fcbb-3f7f-a57c84e92e39}"
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: "ar|Everyone|pe|+item:read|pd|+item:read|"
+- ID: "f41b1b99-0107-dd43-f234-adae63d913f3"
+  Hint: SitecoreId
+  Value: "73ad9c55-def7-c1ff-5efc-cb3e9c74d101"
+- ID: "f4b64d68-f727-7a2d-f1e2-628e5704aa18"
+  Hint: ParentCategoryList
+  Value: "871c3b62-ce96-ad61-dabe-10db020f02c5|e5e9207c-58cd-0735-2a79-b5d2b199ea7a|6caac735-ab5e-f522-7e4a-7be69ae08c74|2756e34f-fa94-26df-dfa4-ba3a90e52cff"
+Languages:
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Habitat Gift Cards
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0758db64-0746-2bbb-241b-2abd830a33c6"
+      Hint: Description
+      Value: "Shop Helix's wide selection of Holiday, Happy Birthday, and Thank You gift cards. You can buy gift cards online and have them shipped for free, or you can purchase and e-mail an e-gift card directly to a recipient's inbox with a personal message. Any of these gift cards can be used online or in stores."
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "11/25/2020 10:42:57"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{dc2fb05e-ae00-2010-0f27-e432ac8d62f1}"
+    - ID: "4faf0196-c1bb-8764-f658-ee6ec2e91a51"
+      Hint: DisplayName
+      Value: Habitat Gift Cards
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "10/23/2020 10:04:30"
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Habitat Gift Cards
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0758db64-0746-2bbb-241b-2abd830a33c6"
+      Hint: Description
+      Value: "Shop Helix's wide selection of Holiday, Happy Birthday, and Thank You gift cards. You can buy gift cards online and have them shipped for free, or you can purchase and e-mail an e-gift card directly to a recipient's inbox with a personal message. Any of these gift cards can be used online or in stores."
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "05/13/2020 20:44:02"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{dc2fb05e-ae00-2010-0f27-e432ac8d62f1}"
+    - ID: "4faf0196-c1bb-8764-f658-ee6ec2e91a51"
+      Hint: DisplayName
+      Value: Habitat Gift Cards
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "10/23/2020 10:04:30"
+- Language: "fr-FR"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Habitat Gift Cards
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0758db64-0746-2bbb-241b-2abd830a33c6"
+      Hint: Description
+      Value: "Shop Helix's wide selection of Holiday, Happy Birthday, and Thank You gift cards. You can buy gift cards online and have them shipped for free, or you can purchase and e-mail an e-gift card directly to a recipient's inbox with a personal message. Any of these gift cards can be used online or in stores."
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "11/25/2020 10:42:57"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{dc2fb05e-ae00-2010-0f27-e432ac8d62f1}"
+    - ID: "4faf0196-c1bb-8764-f658-ee6ec2e91a51"
+      Hint: DisplayName
+      Value: Habitat Gift Cards
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "10/23/2020 10:04:30"
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Habitat Gift Cards
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0758db64-0746-2bbb-241b-2abd830a33c6"
+      Hint: Description
+      Value: "Shop Helix's wide selection of Holiday, Happy Birthday, and Thank You gift cards. You can buy gift cards online and have them shipped for free, or you can purchase and e-mail an e-gift card directly to a recipient's inbox with a personal message. Any of these gift cards can be used online or in stores."
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "11/25/2020 10:42:57"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{dc2fb05e-ae00-2010-0f27-e432ac8d62f1}"
+    - ID: "4faf0196-c1bb-8764-f658-ee6ec2e91a51"
+      Hint: DisplayName
+      Value: Habitat Gift Cards
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "10/23/2020 10:04:30"

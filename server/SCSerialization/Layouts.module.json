@@ -1,0 +1,14 @@
+{
+  "namespace": "Project.Content.Layouts",
+  "references":  "", 
+  "items": {
+    "includes": [
+      {
+        "name": "Layouts",
+        "path": "/sitecore/layout/Layouts/Project/app",
+        "allowedPushOperations": "createUpdateAndDelete",
+        "scope": "itemAndDescendants"
+      }
+    ]
+  }
+}

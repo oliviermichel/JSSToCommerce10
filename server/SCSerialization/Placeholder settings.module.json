@@ -1,0 +1,14 @@
+{
+  "namespace": "Project.Content.PlaceholderSettings",
+  "references":  "", 
+  "items": {
+    "includes": [
+      {
+        "name": "Placeholder Settings",
+        "path": "/sitecore/layout/Placeholder Settings/Project/app",
+        "allowedPushOperations": "createUpdateAndDelete",
+        "scope": "itemAndDescendants"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "namespace": "Project.Content.CategoryNavigationResolver",
+  "references":  "", 
+  "items": {
+    "includes": [
+      {
+        "name": "Category Navigation Resolver",
+        "path": "/sitecore/system/Modules/Layout Service/Rendering Contents Resolvers/Category Navigation Resolver",
+        "allowedPushOperations": "createUpdateAndDelete",
+        "scope": "itemAndDescendants"
+      }
+    ]
+  }
+}

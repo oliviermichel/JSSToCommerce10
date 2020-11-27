@@ -1,0 +1,40 @@
+﻿---
+ID: "1b11a135-2518-40ac-ab22-e60b43d5404e"
+Parent: "4bd64ac3-856e-599f-935b-617c5d8efda2"
+Template: "0e8b0996-343d-5d8b-8a9e-f8f40fe8b4f1"
+Path: /sitecore/content/app/home/Page Components/ProductCluster selection
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{6C59AE29-D0A1-4B77-9305-0ABAB21D5FE5}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190909T120351Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{C55B483C-EA7F-4E76-A066-985F7D9396CA}"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "60caa2bf-f086-4ab2-9ddd-7416ec9ac4bf"
+      Hint: Heading
+      Value: Action products
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cf061978-2c9b-4252-91d6-842c223509b3"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c42b5cbe-ab27-477a-8d09-1cd67a91a470"
+      Hint: Selection
+      Value: 
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20201124T085604Z

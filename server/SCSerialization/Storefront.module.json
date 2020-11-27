@@ -1,0 +1,14 @@
+{
+  "namespace": "Project.Content.Storefront",
+  "references":  "", 
+  "items": {
+    "includes": [
+      {
+        "name": "Storefront",
+        "path": "/sitecore/content/Sitecore/Storefront/Home/Catalogs",
+        "allowedPushOperations": "createUpdateAndDelete",
+        "scope": "itemAndDescendants"
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+﻿---
+ID: "0b089c85-05b8-44f6-8379-67555b649b7d"
+Parent: "13671517-50f1-596b-9684-fa46eefae388"
+Template: "334e2b54-f913-411d-b159-a7b16d65242c"
+Path: /sitecore/content/app/home/Catalogs
+SharedFields:
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\JSS Import Service Users|pe|-item:write|pd|-item:write|
+- ID: "ed3ebccd-a230-4659-923f-014707e1945d"
+  Hint: Selected Catalogs
+  Value: Habitat_Master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201023T144037Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "71b7b690-6935-424d-97f8-e0b554eee8da"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20201029T151828Z

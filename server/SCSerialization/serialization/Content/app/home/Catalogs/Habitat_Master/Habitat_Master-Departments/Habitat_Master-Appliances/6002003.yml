@@ -1,0 +1,243 @@
+﻿---
+ID: "40383e14-1924-5224-59dc-4cce721dbec1"
+Parent: "06f5147b-9e24-fa33-20fb-d4b7d8d21392"
+Template: "b406a224-b9cb-4714-9800-f7dfbfecf189"
+Path: "/sitecore/content/app/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Appliances/6002003"
+SharedFields:
+- ID: "0185d335-4545-edd6-76a8-460db418966a"
+  Hint: VariationProperties
+  Value: Color|Size
+- ID: "01d789fd-74e0-117e-2eb4-6612a1642643"
+  Hint: Name
+  Value: AppliancesAllVariantsBundle
+- ID: "8d4aaea6-6658-7905-192d-c8c1b65ef353"
+  Hint: Tags
+  Value: bundle|dynamic|appliances
+- ID: "8e652519-f3e8-44a0-8eb5-7e9d294ea240"
+  Hint: Bundle Data
+  Value: |
+    {
+      "@odata.type": "#Sitecore.Commerce.Plugin.Catalog.BundleComponent",
+      "BundleType": "Dynamic",
+      "BundleItems": [
+        {
+          "@odata.type": "#Sitecore.Commerce.Plugin.Catalog.DynamicBundleItem",
+          "MaximumQuantity": 1,
+          "IsOptional": false,
+          "IsUpgradable": false,
+          "UnitPrice": {
+            "@odata.type": "#Sitecore.Commerce.Core.MultiCurrency",
+            "Values": [
+              {
+                "@odata.type": "#Sitecore.Commerce.Core.Money",
+                "CurrencyCode": "USD",
+                "Amount": 1450.0
+              },
+              {
+                "@odata.type": "#Sitecore.Commerce.Core.Money",
+                "CurrencyCode": "CAD",
+                "Amount": 1550.0
+              }
+            ]
+          },
+          "SellableItemId": "99a4bf47-8c3e-6560-1987-9851f12120c5",
+          "Quantity": 1
+        },
+        {
+          "@odata.type": "#Sitecore.Commerce.Plugin.Catalog.DynamicBundleItem",
+          "MaximumQuantity": 2,
+          "IsOptional": true,
+          "IsUpgradable": false,
+          "UnitPrice": {
+            "@odata.type": "#Sitecore.Commerce.Core.MultiCurrency",
+            "Values": [
+              {
+                "@odata.type": "#Sitecore.Commerce.Core.Money",
+                "CurrencyCode": "USD",
+                "Amount": 1000.0
+              },
+              {
+                "@odata.type": "#Sitecore.Commerce.Core.Money",
+                "CurrencyCode": "CAD",
+                "Amount": 1050.0
+              }
+            ]
+          },
+          "SellableItemId": "30d3a79a-5970-a327-c395-e8709f2fbd58",
+          "Quantity": 1
+        },
+        {
+          "@odata.type": "#Sitecore.Commerce.Plugin.Catalog.DynamicBundleItem",
+          "MaximumQuantity": 1,
+          "IsOptional": false,
+          "IsUpgradable": false,
+          "UnitPrice": {
+            "@odata.type": "#Sitecore.Commerce.Core.MultiCurrency",
+            "Values": [
+              {
+                "@odata.type": "#Sitecore.Commerce.Core.Money",
+                "CurrencyCode": "USD",
+                "Amount": 4450.0
+              },
+              {
+                "@odata.type": "#Sitecore.Commerce.Core.Money",
+                "CurrencyCode": "CAD",
+                "Amount": 4550.0
+              }
+            ]
+          },
+          "SellableItemId": "269eb4bb-98b1-02cd-6ca3-5df31a38f71d",
+          "Quantity": 1
+        }
+      ],
+      "Id": "7dd2af384c8640ca91593a5aa5a59308"
+    }
+- ID: "94520a52-93c3-4f33-a20d-618bdedc4bd2"
+  Hint: Images
+  Value: "{42C1F3D1-6E98-4331-A1D3-720CBFAF1158}"
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{f1fb8a76-9c0e-fcbb-3f7f-a57c84e92e39}"
+- ID: "a7c26e68-f587-b3a5-a48d-6c9b08752472"
+  Hint: ParentCatalogList
+  Value: "59ddadc1-9b88-727e-9e14-3f6cf321ae0f"
+- ID: "b9ad0613-0584-6c55-d180-1c7d0215d9e7"
+  Hint: ProductId
+  Value: 6002003
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: "{f1fb8a76-9c0e-fcbb-3f7f-a57c84e92e39}"
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: "ar|Everyone|pe|+item:read|pd|+item:read|"
+- ID: "f41b1b99-0107-dd43-f234-adae63d913f3"
+  Hint: SitecoreId
+  Value: "68cb30c1-e495-3515-383b-e5ffb3de124e"
+- ID: "f4b64d68-f727-7a2d-f1e2-628e5704aa18"
+  Hint: ParentCategoryList
+  Value: "06f5147b-9e24-fa33-20fb-d4b7d8d21392"
+Languages:
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Appliances All Variants Bundle
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0758db64-0746-2bbb-241b-2abd830a33c6"
+      Hint: Description
+      Value: Sample dynamic bundle containing all variants for appliances
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "11/25/2020 10:42:58"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{dc2fb05e-ae00-2010-0f27-e432ac8d62f1}"
+    - ID: "4faf0196-c1bb-8764-f658-ee6ec2e91a51"
+      Hint: DisplayName
+      Value: Appliances All Variants Bundle
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "10/23/2020 10:04:32"
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Appliances All Variants Bundle
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0758db64-0746-2bbb-241b-2abd830a33c6"
+      Hint: Description
+      Value: Sample dynamic bundle containing all variants for appliances
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "10/23/2020 10:04:32"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{dc2fb05e-ae00-2010-0f27-e432ac8d62f1}"
+    - ID: "4faf0196-c1bb-8764-f658-ee6ec2e91a51"
+      Hint: DisplayName
+      Value: Appliances All Variants Bundle
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "10/23/2020 10:04:32"
+- Language: "fr-FR"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Appliances All Variants Bundle
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0758db64-0746-2bbb-241b-2abd830a33c6"
+      Hint: Description
+      Value: Sample dynamic bundle containing all variants for appliances
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "11/25/2020 10:42:58"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{dc2fb05e-ae00-2010-0f27-e432ac8d62f1}"
+    - ID: "4faf0196-c1bb-8764-f658-ee6ec2e91a51"
+      Hint: DisplayName
+      Value: Appliances All Variants Bundle
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "10/23/2020 10:04:32"
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Appliances All Variants Bundle
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0758db64-0746-2bbb-241b-2abd830a33c6"
+      Hint: Description
+      Value: Sample dynamic bundle containing all variants for appliances
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "11/25/2020 10:42:58"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{dc2fb05e-ae00-2010-0f27-e432ac8d62f1}"
+    - ID: "4faf0196-c1bb-8764-f658-ee6ec2e91a51"
+      Hint: DisplayName
+      Value: Appliances All Variants Bundle
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "10/23/2020 10:04:32"

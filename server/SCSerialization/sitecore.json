@@ -1,0 +1,17 @@
+{
+  "$schema": "./.sitecore/schemas/RootConfigurationFile.schema.json",
+  "modules": [
+    "./Templates.module.json",
+    "./Layouts.module.json",
+    "./Renderings.module.json",
+    "./Placeholder settings.module.json",
+    "./CategoryNavigationResolver.module.json",
+    "./Products Resolver.module.json",
+    "./Subcategory Navigation Resolver.module.json",
+    "./Content.module.json"
+  ],
+  "serialization": {
+    "defaultMaxRelativeItemPathLength": 120,
+    "defaultModuleRelativeSerializationPath": "serialization"
+  }
+}

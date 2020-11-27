@@ -1,0 +1,14 @@
+{
+  "namespace": "Project.Content.Content",
+  "references":  "", 
+  "items": {
+    "includes": [
+      {
+        "name": "Content",
+        "path": "/sitecore/content/app",
+        "allowedPushOperations": "createUpdateAndDelete",
+        "scope": "itemAndDescendants"
+      }
+    ]
+  }
+}
