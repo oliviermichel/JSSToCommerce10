@@ -179,15 +179,13 @@ Function AssociateCatalog {
     [pscustomobject]@{Name="CatalogName";DisplayName="Catalog Name";Value=$CatalogName;IsHidden=$False;OriginalType="System.String";IsReadOnly=$False;IsRequired=$True}`
     );DisplayRank=500;UiHint="Flat"}} | ConvertTo-Json -Depth 100
 
-    Write-Host($body)
     
     $contentType = 'application/json'
     $headers = BuildHeaders($token)
     $uri = "$IdentityServiceUri/api/DoAction()"
     $Res = Invoke-RestMethod -Uri $uri -ContentType $contentType -Method Post -Headers $headers -Body $body
 
-    Write-Host($Res)
-
+    
     $result = $Res.ResponseCode
     if ($result -ne "Ok") {
         $result = $res.Messages[0].CommerceTermKey
@@ -239,21 +237,27 @@ Function DeleteSellableItem {
 
     # CategoryId has to be inte the form like "SoftProducts-HedinTyreServices". Check result in Postman for Categories request
     $ItemId = "Entity-SellableItem-$SellableItem"
+	$EntityId = "Entity-Category-$CategoryId"
     
-    $Version = GetCategoryVersion -Token $token -Cateory $CategoryId -IdentityServiceUri $IdentityServiceUri 
-    
-    $body = @{entityView=@{Name="DeleteSellableItem";DisplayName="DeleteSellableItem";EntityId=$CategoryId;Action="DeleteSellableItem";ItemId=$ItemId;Properties=@( `
-    [pscustomobject]@{Name="Version";DisplayName="Version";Value=$Version;IsHidden=$True;OriginalType="System.Int32";IsReadOnly=$True;IsRequired=$True}`
-    );DisplayRank=500}} | ConvertTo-Json -Depth 100
-
+    $Version = GetCategoryVersion -Token $token -Category $CategoryId -IdentityServiceUri $IdentityServiceUri 
+	
+	
+    $body = @{entityView=@{Name="DeleteSellableItem";DisplayName="DeleteSellableItem";EntityId=$EntityId;Action="DeleteSellableItem";EntityVersion=1;ItemId=$ItemId;VersionedItemId="$ItemId-1";Properties=@( `
+    [pscustomobject]@{Name="Version";DisplayName="Version";Value="$Version";IsHidden=$True;OriginalType="System.Int32";IsReadOnly=$True;IsRequired=$True},`
+	[pscustomobject]@{Name="DeleteOption";DisplayName="Delete Option";Value="";IsHidden=$True;OriginalType="System.String";IsReadOnly=$False;IsRequired=$False}`
+    );DisplayRank=500;UiHint="Flat";Icon="chart_column_stacked"}} | ConvertTo-Json -Depth 100
+	
+	
     $contentType = 'application/json'
     $headers = BuildHeaders($token)
     $uri = "$IdentityServiceUri/api/DoAction()"
     $Res = Invoke-RestMethod -Uri $uri -ContentType $contentType -Method Post -Headers $headers -Body $body
     
-    Write-Host("Delete sellable item: $Res.ResponseCode")
-
-    return $Res.ResponseCode
+    if ($Res.ResponseCode -eq "Ok") {
+		return "$SellableItem deleted"
+	} else {
+		return $Res.Messages[0].Text
+	}
 }
 
 Function AssociateSellableItem {
@@ -266,13 +270,16 @@ Function AssociateSellableItem {
     [string] $Version,
     [string] $ProductId,
     [string] $VariantId,
-    [int] $Quantity
+    [int] $Quantity,
+	[int] $Price
     )
 
     $body = @{entityView=@{Name="AssociateSellableItem";DisplayName="Associate Sellable Item";EntityId="Entity-InventorySet-$InventoryName";Action="AssociateSellableItem";ItemId="";Properties=@( `
     [pscustomobject]@{Name="Version";DisplayName="Version";Value=$Version;IsHidden=$True;OriginalType="System.Int32";IsReadOnly=$True;IsRequired=$True},`
     [pscustomobject]@{Name="SellableItem";DisplayName="Sellable Item";Value="Entity-SellableItem-$ProductId|$VariantId";IsHidden=$False;OriginalType="System.String";IsReadOnly=$False;IsRequired=$True},`
-    [pscustomobject]@{Name="Quantity";DisplayName="Quantity";Value="$Quantity";IsHidden=$False;OriginalType="System.Int32";IsReadOnly=$False;IsRequired=$True}`
+    [pscustomobject]@{Name="Quantity";DisplayName="Quantity";Value="$Quantity";IsHidden=$False;OriginalType="System.Int32";IsReadOnly=$False;IsRequired=$True},`
+	[pscustomobject]@{Name="InvoiceUnitPrice";DisplayName="Invoice Unit Price";Value="$Price";IsHidden=$False;OriginalType="System.Decimal";IsReadOnly=$False;IsRequired=$False},`
+	[pscustomobject]@{Name="InvoiceUnitPriceCurrency";DisplayName="Invoice Unit Price Currency";Value="SEK";IsHidden=$False;OriginalType="System.String";IsReadOnly=$False;IsRequired=$False}`
     );DisplayRank=500;UiHint="Flat"}} | ConvertTo-Json -Depth 100
 
     
@@ -429,19 +436,33 @@ Function AddPrice {
     (
     [string][parameter(Mandatory = $true)][ValidateNotNullOrEmpty()]$Token,
     [string][parameter(Mandatory = $true)][ValidateNotNullOrEmpty()]$IdentityServiceUri,
+	[string] $SellableItem,
+	[string] $Version,
     [string] $VariantId,
     [int] $Price
     )
 
-    $body = @{itemId=$variantId;prices=@( `
-    [pscustomobject]@{CurrencyCode="SEK";Amount=$Price}`
-    )} | ConvertTo-Json -Depth 100
+    #$body = @{itemId=$variantId;prices=@( `
+    #[pscustomobject]@{CurrencyCode="SEK";Amount=$Price}`
+    #)} | ConvertTo-Json -Depth 100
+	
+	$body = @{entityView=@{Name="SellableItemListPricing";DisplayName="List Pricing";EntityId=$SellableItem;Action="AddSellableItemListPrice";ItemId=$VariantId;VersionedItemId="$VariantId-1";Properties=@( `
+    [pscustomobject]@{Name="Version";DisplayName="Version";Value=$Version;IsHidden=$True;OriginalType="System.Int32";IsReadOnly=$True;IsRequired=$True},`
+    [pscustomobject]@{Name="Currency";DisplayName="Currency";Value="SEK";IsHidden=$False;OriginalType="System.String";IsReadOnly=$False;IsRequired=$True},`
+    [pscustomobject]@{Name="ListPrice";DisplayName="List Price";Value="$Price";IsHidden=$False;OriginalType="System.Decimal";IsReadOnly=$False;IsRequired=$True}`
+    );DisplayRank=500;UiHint="Flat";Icon="dashboard"}} | ConvertTo-Json -Depth 100
 
     $contentType = 'application/json'
     $headers = BuildHeaders($token)
-    $uri = "$IdentityServiceUri/api/UpdateListPrices()"
+    #$uri = "$IdentityServiceUri/api/UpdateListPrices()"
+	$uri = "$IdentityServiceUri/api/DoAction()"
     $Res = Invoke-RestMethod -Uri $uri -ContentType $contentType -Method Post -Headers $headers -Body $body
-
+    if ($Res.ResponseCode -ne "Ok") {
+		Write-Host($uri)
+		Write-Host($body)
+		Write-Host($Res)
+		return $Res.Messages[0]
+	}
     return $Res.ResponseCode
 }
 
@@ -488,8 +509,7 @@ Function CreateAssociateCatalog {
     $CatalogName = $Data.CatalogName
 
     $versionInventory = GetInventorySetVersion -Token $token -Name $InventoryName -IdentityServiceUri $IdentityServiceUri
-    Write-Host($versionInventory)
-
+    
     $result = AssociateCatalog -Token $token -InventoryName $InventoryName -Version $versionInventory -CatalogName $CatalogName -IdentityServiceUri $IdentityServiceUri
 
     if ($result -eq "CatalogAlreadyAssociated") {
@@ -515,10 +535,11 @@ Function CreateAssociateSellableItem {
     $ProductId = $Data.ProductId
     $VariantId = $Data.VariantId
     $Quantity = $Data.Quantity
+	$Price = $Data.Price
 
     $versionInventory = GetInventorySetVersion -Token $token -Name $InventoryName -IdentityServiceUri $IdentityServiceUri
 
-    $result = AssociateSellableItem -Token $token -InventoryName $InventoryName -Version $versionInventory -ProductId $ProductId -VariantId $VariantId -Quantity $Quantity -IdentityServiceUri $IdentityServiceUri
+    $result = AssociateSellableItem -Token $token -InventoryName $InventoryName -Version $versionInventory -ProductId $ProductId -VariantId $VariantId -Quantity $Quantity -Price $Price -IdentityServiceUri $IdentityServiceUri
     if ($result -ne "Ok") {
         Write-Host("Error Associated sellableItem $ProductId  $VariantId to inventory $InventoryName : $result")
         Exit 1
@@ -662,7 +683,8 @@ Function CreateSellableItem {
                 Exit 1
             }
             $versionSellableItem++
-            $result = AddPrice -Token $token -VariantId "$catalog|$sellableItem|$variantId" -Price $price -IdentityServiceUri $IdentityServiceUri
+            #$result = AddPrice -Token $token -VariantId "$catalog|$sellableItem|$variantId" -Price $price -IdentityServiceUri $IdentityServiceUri
+			$result = AddPrice -Token $token -SellableItem "Entity-SellableItem-$sellableItem" -Version $versionSellableItem -VariantId "$variantId" -Price $price -IdentityServiceUri $IdentityServiceUri
             if ($result -ne "Ok") {
                 Write-Host("Error adding price $name : $result")
                 Exit 1
